@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #09b99e;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fitHeight="431.0" fitWidth="600.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@download%20(3).jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="27.0" layoutY="14.0" prefHeight="43.0" prefWidth="530.0" text="Converter Using JavaFX" textFill="#ebebeb">
+         <font>
+            <Font name="Candara Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textbox" layoutX="21.0" layoutY="67.0" prefHeight="43.0" prefWidth="530.0" style="-fx-background-color: #b2beb5;" text="Enter Number:">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </TextField>
+      <Button fx:id="meter" layoutX="389.0" layoutY="232.0" mnemonicParsing="false" onAction="#ActionM" prefHeight="29.0" prefWidth="166.0" style="-fx-background-color: #b2beb5;" text="Meter">
+         <font>
+            <Font name="Calisto MT" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="kilimeter" layoutX="209.0" layoutY="232.0" mnemonicParsing="false" onAction="#ActionKM" prefHeight="29.0" prefWidth="166.0" style="-fx-background-color: #b2beb5;" text="KiloMeter" textFill="#0d0d0d">
+         <font>
+            <Font name="Calisto MT" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="INR" layoutX="27.0" layoutY="232.0" mnemonicParsing="false" onAction="#ActionINR" prefHeight="30.0" prefWidth="166.0" style="-fx-background-color: #b2beb5;" text="INR (Indian Rupees)">
+         <font>
+            <Font name="Calisto MT" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow>
+                     <input>
+                        <Shadow />
+                     </input>
+                  </Shadow>
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="celsius" layoutX="389.0" layoutY="303.0" mnemonicParsing="false" onAction="#ActionCelsius" prefHeight="29.0" prefWidth="166.0" style="-fx-background-color: #b2beb5;" text="Celsius ">
+         <font>
+            <Font name="Calisto MT" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow>
+                     <input>
+                        <InnerShadow />
+                     </input>
+                  </Shadow>
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="volume" layoutX="27.0" layoutY="303.0" mnemonicParsing="false" onAction="#ActionVolume" prefHeight="29.0" prefWidth="166.0" style="-fx-background-color: #b2beb5;" text="Volume">
+         <font>
+            <Font name="Calisto MT" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="farenheit" layoutX="209.0" layoutY="303.0" mnemonicParsing="false" onAction="#ActionFarenheit" prefHeight="29.0" prefWidth="166.0" style="-fx-background-color: #b2beb5;" text="Farenheit">
+         <font>
+            <Font name="Calisto MT" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Label fx:id="label" layoutX="21.0" layoutY="158.0" prefHeight="43.0" prefWidth="530.0" style="-fx-background-color: #b2beb5;" visible="false">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>
